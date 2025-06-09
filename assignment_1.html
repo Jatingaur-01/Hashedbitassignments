@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Webpage</title>
+  <link rel="stylesheet" href="assignment1style.css" />
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="universelogo.jpg" alt="Universe Logo" />
+      <span id="logo1">Explore The Cosmos</span>
+    </div>
+    <div id="links">
+      <a href="https://facebook.com">Facebook</a>
+      <a href="https://twitter.com">Twitter(X)</a>
+      <a href="https://youtu.be/h6BdWzMbWzw?si=yRkI7VKawTKQMI3i">YouTube</a>
+      <a href="https://en.wikipedia.org/wiki/Universe">Wikipedia</a>
+    </div>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div id="mainbox">
+    <aside>
+      <br>
+      <h2>The Universe</h2>
+      <br>
+      <p>The universe is composed of dark energy, dark matter, and ordinary matter. It has been expanding since the Big
+        Bang 13.8 billion years ago. The observable universe is about 93 billion light-years in diameter.</p>
+      <br>
+      <h3>Quick Facts = ></h3>
+      <br>
+      <ul>
+        <li> Age of Universe: 13.8B yrs</li>
+        <br>
+        <li> Observable size: 93B light-years</li>
+        <br>
+        <li> Speed of light: 300,000 km/s</li>
+        <br>
+      </ul>
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="#galaxy">Galaxy</a></li>
+        <li><a href="#milkyway">Milky Way</a></li>
+        <li><a href="#solar">Solar System</a></li>
+      </ul>
+      <h3>Did You Know?</h3>
+      <p>The largest known star is UY Scuti, over 1,700 times larger than the Sun!</p>
+      <h3>Search</h3>
+      <input type="text" placeholder="Search the universe..."
+        style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;" />
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://www.isro.gov.in/">ISRO(Indian Space Research Organisation)</a></li>
+        <li><a href="https://www.nasa.gov">NASA</a></li>
+        <li><a href="https://www.space.com">Space.com</a></li>
+        <li><a href="https://www.esa.int">ESA (Europe Space Agency)</a></li>
+      </ul>
+      <h3>Image of the Day</h3>
+      <img src="iotd.jpg" alt="Image of the Day" style="width: 100%; border-radius: 4px;" />
+      <h3>Current Date & Time</h3>
+      <p id="datetime"></p>
+      <script>
+        function updateTime() {
+          const now = new Date();
+          document.getElementById("datetime").innerText = now.toLocaleString();
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+      </script>
+      <h3>Poll</h3>
+      <p>Which planet fascinates you the most?</p>
+      <form>
+        <input type="radio" name="planet" /> Mars<br>
+        <input type="radio" name="planet" /> Saturn<br>
+        <input type="radio" name="planet" /> Jupiter<br>
+        <input type="radio" name="planet" /> Neptune<br>
+        <button type="submit">Vote</button>
+      </form>
+      <h3>Visit ISRO</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17713290.437431894!2d53.83416568043154!3d8.864926120345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17e7a949cae9%3A0x8397364610ef2771!2sIndian%20Space%20Research%20Organisation!5e0!3m2!1sen!2sus!4v1749089842835!5m2!1sen!2sus" width="100%"
+        height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <h3>Upcoming Future Events</h3>
+      <ul>
+        <li> 🚀 Artemis II Launch - Nov 2025</li>
+        <li> 🌑 Total Solar Eclipse - Aug 2026</li>
+        <li> 🌌 Webb Telescope New Data - Ongoing</li>
+      </ul>
+      <h3>ISRO Main Events In 2025</h3>
+      <ul>
+        <li>🚀 Gaganyaan TV-D1 mission </li>
+        <li>🚀 NISAR Nasa-Isro satellite programme</li>
+      </ul>
+      <h3>Downloads</h3>
+      <ul>
+        <li><a href="https://web.archive.org/web/20150905155421/http://physics.ucr.edu/~wudka/Physics7/Notes_www/Pdf_downloads/8.pdf" download>📘 Universe Notes (PDF)</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Universe#References" download>📊 Galaxy Chart (Image)</a></li>
+      </ul>
+    </aside>
+    <main>
+      <div class="contentbox">
+        <h2>Galaxy</h2>
+        <img src="universeimg.jpg" alt="Galaxy Image" />
+        <p>A galaxy is a system of stars, dust, and dark matter bound by gravity. They range in size from dwarfs with a
+          few thousand stars to supergiants with trillions.</p>
+        <a href="#" class="readmore">Read More</a>
+      </div>
+      <div class="contentbox">
+        <h2>Milky Way</h2>
+        <img src="milkywayimg.jpg" alt="Milky Way Image" />
+        <p>The Milky Way is a barred spiral galaxy containing our Solar System. It appears as a hazy band in the night
+          sky made up of distant stars.</p>
+        <a href="#" class="readmore">Read More</a>
+      </div>
+      <div class="contentbox">
+        <h2>Solar System</h2>
+        <img src="Solarsysimg.jpg" alt="Solar System Image" />
+        <p>The Solar System includes the Sun and the objects that orbit it. It formed around 4.6 billion years ago from
+          a collapsing molecular cloud.</p>
+        <a href="#" class="readmore">Read More</a>
+      </div>
+    </main>
+  </div>
+  <footer>
+    &copy; 2025 All rights reserved.
+    <li>About us</li>
+    <li>Contact us</li>
+  </footer>
+</body>
+</html>
